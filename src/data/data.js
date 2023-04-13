@@ -60,7 +60,7 @@ const products = [
     titolo: "Dc Merchandise",
   },
   {
-    src: "../assets/images/buy-comics-subscriptions",
+    src: "../assets/images/buy-comics-subscriptions.png",
     titolo: "Subscription",
   },
   {

@@ -1,13 +1,13 @@
 <template>
-  <header>
-    <div class="container d-flex justify-content-between align-items-center">
-      <div class="logo">
-        <img class="" src="../assets/images/dc-logo.png" alt="">
+  <header class="d-flex align-items-center">
+    <div class="container d-flex  ">
+      <div class="logo w-25">
+        <img class="img-fluid" src="../assets/images/dc-logo.png" alt="">
       </div>
-      <div class="navLinks w-75 ">
-        <ul class="d-flex justify-content-between">
+      <div class="navLink w-75 d-flex flex-column justify-content-center ">
+        <ul class="d-flex justify-content-between pt-3">
           <li class="text-uppercase fw-bolder small" v-for="link in navbar">
-            <a class="nav-link" :href="link.url">{{link.text}}</a>
+            <a class="nav-link" :href="link.url">{{ link.text }}</a>
           </li>
         </ul>
       </div>
@@ -16,28 +16,31 @@
 </template>
 
 <script>
-import {links} from '../data/data.js'
-  export default {
-    name:'HeaderComponent',
-    data(){
-      return{
-        navbar:links
-      }
+import { links } from '../data/data.js'
+export default {
+  name: 'HeaderComponent',
+  data() {
+    return {
+      navbar: links
     }
   }
+}
 </script>
 
 <style lang="scss" scoped>
 @use '../assets/styles/partials/variables' as *;
-header{
+
+header {
   height: 80px;
   background-color: $white;
   color: $black;
 }
-img{
+
+img {
   width: 60px;
 }
-li{
+
+li {
   list-style: none;
 }
 </style>
