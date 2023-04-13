@@ -217,4 +217,6 @@ const contacts = [
     src: "../assets/images/footer-periscope.png",
     titolo: "Periscope",
   },
-]
+];
+
+export {links, products, menu, contacts};
