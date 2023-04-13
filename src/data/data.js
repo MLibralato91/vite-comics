@@ -52,23 +52,23 @@ const links = [
 ];
 const products = [
   {
-    src: "../assets/images/buy-comics-digital-comics.png",
+    src: '../../public/images/buy-comics-digital-comics.png',
     titolo: "Digital Comics",
   },
   {
-    src: "../assets/images/buy-comics-merchandise.png",
+    src: "../../public/images/buy-comics-merchandise.png",
     titolo: "Dc Merchandise",
   },
   {
-    src: "../assets/images/buy-comics-subscriptions.png",
+    src: "../../public/images/buy-comics-subscriptions.png",
     titolo: "Subscription",
   },
   {
-    src: "../assets/images/buy-comics-shop-locator.png",
+    src: "../../public/images/buy-comics-shop-locator.png",
     titolo: "Comic shop locator",
   },
   {
-    src: "../assets/images/buy-dc-power-visa.svg",
+    src: "../../public/images/buy-dc-power-visa.svg",
     titolo: "Dc power visa",
   }
 ];

@@ -3,7 +3,7 @@
     <div class="container">
       <ul class="d-flex justify-content-between">
         <li v-for="product in mainProd">
-          <div>
+          <div class="d-flex ">
             <img :src="product.src" :alt="product.titolo">
             <p>{{product.titolo}}</p>
           </div>
@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import { products } from '../data/data';
+import { products } from '../data/data.js';
 
   export default {
     name: 'ProductsMain',
@@ -35,5 +35,9 @@ import { products } from '../data/data';
 }
 li {
   list-style: none;
+}
+
+img{
+  width: 70px;
 }
 </style>
