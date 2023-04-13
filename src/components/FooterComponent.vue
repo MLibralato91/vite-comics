@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <h1>Footer</h1>
-  </div>
+  <footer>
+
+  </footer>
 </template>
 
 <script>
@@ -11,7 +11,10 @@
 </script>
 
 <style lang="scss" scoped>
-h1{
-  color: red;
+@use '../assets/styles/partials/variables' as *;
+
+footer{
+  height: 80px;
+  background-color: $bgFooter;
 }
 </style>

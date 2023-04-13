@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <h1>Main</h1>
-  </div>
+  <main>
+
+  </main>
 </template>
 
 <script>
@@ -11,7 +11,9 @@
 </script>
 
 <style lang="scss" scoped>
-h1{
-  color: red;
+@use '../assets/styles/partials/variables' as *;
+main{
+  height: calc(100vh - 160px);
+  background-color: $black;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <h1>Header</h1>
-  </div>
+  <header>
+
+  </header>
 </template>
 
 <script>
@@ -11,7 +11,9 @@
 </script>
 
 <style lang="scss" scoped>
-h1{
-  color: red;
+@use '../assets/styles/partials/variables' as *;
+header{
+  height: 80px;
+  background-color: $white;
 }
 </style>
