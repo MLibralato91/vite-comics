@@ -1,16 +1,30 @@
 <template>
   <main>
-    <section class="content d-flex align-items-center">
+    <div class="jumbotron">
+      <img src="../../public/images/jumbotron.jpg" alt="">
+    </div>
       <div class="container ">
-        <h5>  Content goes here  </h5>
+        <div class="row">
+          <CardComponent :img="picture.thumb" :title="picture.series" v-for="picture in pictures"/>
+        </div>
       </div>
-    </section>
+ 
   </main>
 </template>
 
 <script>
+import CardComponent from "./CardComponent.vue";
+import { thumbnails } from "../data/data";
   export default {
-    name: 'MainComponent'
+    name: 'MainComponent',
+    components:{
+      CardComponent
+    },
+    data() {
+    return {
+      pictures: thumbnails
+    }
+  }
   }
 </script>
 
@@ -20,5 +34,14 @@ main{
   
   background-color: $black;
   color: $white;
+}
+.jumbotron{
+  height: 300px;
+  overflow: hidden;
+}
+img{
+  object-fit: contain;
+  object-position: -200px;
+  
 }
 </style>
