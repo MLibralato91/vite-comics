@@ -17,7 +17,7 @@
 import { products } from '../data/data.js';
 
   export default {
-    name: 'ProductsMain',
+    name: 'ProductsFooter',
     data() {
     return {
       mainProd: products,
@@ -38,6 +38,8 @@ li {
 }
 
 img{
-  width: 70px;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
 }
 </style>

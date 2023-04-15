@@ -198,23 +198,23 @@ const menu = [
 ];
 const contacts = [
   {
-    src: "../assets/images/footer-facebook.png",
+    src: "../../public/images/footer-facebook.png",
     titolo: "Facebook",
   },
   {
-    src: "../assets/images/footer-twitter.png",
+    src: "../../public/images/footer-twitter.png",
     titolo: "Twitter",
   },
   {
-    src: "../assets/images/footer-youtube.png",
+    src: "../../public/images/footer-youtube.png",
     titolo: "Youtube",
   },
   {
-    src: "../assets/images/footer-pinterest.png",
+    src: "../../public/images/footer-pinterest.png",
     titolo: "Pinterest",
   },
   {
-    src: "../assets/images/footer-periscope.png",
+    src: "../../public/images/footer-periscope.png",
     titolo: "Periscope",
   },
 ];
