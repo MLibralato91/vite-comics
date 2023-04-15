@@ -17,8 +17,19 @@
 
       </div>
     </div>
-    <div class="bottomFooter">
-
+    <div class="bottomFooter d-flex align-items-center">
+      <div class="container d-flex justify-content-between ">
+        <div class="sign">
+          <button type="button" class="btn btn-outline-primary text-white">SIGN-UP NOW!</button>
+        </div>
+        
+        <div class="social d-flex align-items-center">
+          <h5 class="text-uppercase text-primary m-0 fw-bolder">Follow Us</h5>
+          <div class="contacts ps-3" v-for="contact in allContacts">
+            <img :src="contact.src" :alt="contact.titolo">
+          </div>
+        </div>
+      </div>
     </div>
   </footer>
 </template>
@@ -52,15 +63,21 @@ export default {
 
 .mainFooter {
   background-image: url(../../public/images/footer-bg.jpg);
- 
-  
-  
+
+  img {
+    width: 500px;
+    position: absolute;
+    right: 0;
+    bottom: -40%;
+  }
+
 }
 
 h5 {
   color: $white;
 }
-ul{
+
+ul {
   padding-inline-start: 0;
 }
 
@@ -68,12 +85,9 @@ li {
   list-style: none;
   color: grey;
 }
-img{
-  width: 500px;
-  position: absolute;
-  right: 0;
-  bottom: -40%;
-  
-  
+
+
+button {
+  border-radius: 0;
 }
 </style>
