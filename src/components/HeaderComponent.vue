@@ -7,7 +7,7 @@
       <div class="navLink w-75 d-flex flex-column justify-content-center ">
         <ul class="d-flex justify-content-between ">
           <li class="text-uppercase fw-bolder small" v-for="link in navbar">
-            <a class="nav-link" :href="link.url">{{ link.text }}</a>
+            <a class="nav-link " :href="link.url">{{ link.text }}</a>
           </li>
         </ul>
       </div>
@@ -35,15 +35,23 @@ header {
   background-color: $white;
   color: $black;
 }
-
+a{
+  
+}
 img {
   width: 60px;
 }
-
+a:hover{
+  color: rgb(13, 110, 253);
+  border-bottom: 2px solid rgb(13, 110, 253) ;
+}
+a{
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
 li {
   list-style: none;
 }
 ul{
-  margin-bottom: 0;
+  margin-bottom: -2px;
 }
 </style>
