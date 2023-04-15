@@ -1,11 +1,11 @@
 <template>
-  <div class="products">
+  <div class="products d-flex align-items-center small">
     <div class="container">
       <ul class="d-flex justify-content-between">
         <li v-for="product in mainProd">
-          <div class="d-flex ">
+          <div class="d-flex align-items-center">
             <img :src="product.src" :alt="product.titolo">
-            <p>{{product.titolo}}</p>
+            <p class="text-white ps-3 text-uppercase">{{product.titolo}}</p>
           </div>
         </li>
       </ul>
@@ -35,11 +35,17 @@ import { products } from '../data/data.js';
 }
 li {
   list-style: none;
+  p{
+    margin-bottom: 0;
+  }
 }
 
 img{
   width: 50px;
   height: 50px;
   object-fit: contain;
+}
+ul{
+  margin-bottom: 0;
 }
 </style>

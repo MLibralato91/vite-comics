@@ -6,7 +6,7 @@
         <img src="../../public/images/dc-logo-bg.png" alt="dc-logo-bg">
         <div class="row">
           <div class="col-2 listMenu" v-for="menu in allMenu">
-            <ul>
+            <ul class="my-4">
               <h5 class="text-uppercase fw-bolder">{{ menu.title }}</h5>
               <li class="small" v-for="link in menu.links">
                 {{ link.text }}
